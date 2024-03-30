@@ -166,7 +166,7 @@ h2 {
     border-bottom: solid 2px;
 }
 
-/*Told·s*/
+/*Told√°s*/
 
 .mission_img {
     width: 200px;
@@ -580,4 +580,61 @@ button {
     .video-card {
         width: 80%;
     }
+}
+
+/*NYOMTATAS*/
+
+@media print {
+
+    @page {
+        margin: 1cm;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+
+    .content {
+
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        
+    }
+
+     h3, p, span {
+
+        visibility: visible;
+    }
+
+    footer p {
+        visibility: hidden;
+    }
+
+    table, th, td {
+        visibility: visible;
+        background-color: white;
+        border-color: black;
+        color: black;
+        border: 1px solid black;
+    }
+
+        table.juttatasok tbody td{
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+        }
+
+        table.juttatasok thead {
+            background-color: gray;
+            color: black;
+        }
+
+          table.juttatasok thead th {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                border-left: 1px thin black;
+            }
 }
